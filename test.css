@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: #18222d;
+}
+
+.grid {
+    width: 100%;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid-block {
+    width: 50%;
+    min-height: 11.25rem;
+    padding: 1rem;
+}
+
+.image-grid {
+    -webkit-transform: rotateX(0deg) rotateZ(4deg);
+    transform: rotateX(0deg) rotateZ(0deg);
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.image-grid .tile-link:hover .tile-img {
+    top: -1rem;
+    left: -1rem;
+}
+
+.image-grid .tile-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: opacity, top, left, box-shadow;
+    transition-property: opacity, top, left, box-shadow;
+}
+
+.tile-link {
+    display: block;
+}
+
+.tile-link:hover .tile-img {
+    opacity: 1;
+}
+
+.tile-link:hover .tile-img-link {
+    display: block;
+}
+
+.tile-link:hover .tile-img-link:hover .tile-img {
+    opacity: 0.5;
+}
+
+.tile-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.125s;
+    transition-duration: 0.125s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}
+
+.tile-link:hover .tile-img1 {
+    box-shadow: 5px 5px rgba(39, 189, 0, 0.4), 10px 10px rgba(39, 189, 0, 0.3), 15px 15px rgba(39, 189, 0, 0.2), 20px 20px rgba(39, 189, 0, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+}
+
+.tile-link:hover .tile-img2 {
+    box-shadow: 5px 5px rgba(61, 129, 26, 0.4), 10px 10px rgba(61, 129, 26, 0.3), 15px 15px rgba(61, 129, 26, 0.2), 20px 20px rgba(61, 129, 26, 0.1), 25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.tile-link:hover .tile-img3 {
+    box-shadow: 5px 5px rgba(205, 142, 54, 0.4), 10px 10px rgba(205, 142, 54, 0.3), 15px 15px rgba(205, 142, 54, 0.2), 20px 20px rgba(205, 142, 54, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.tile-link:hover .tile-img4 {
+    box-shadow: 5px 5px rgba(66, 115, 29, 0.4), 10px 10px rgba(66, 115, 29, 0.3), 15px 15px rgba(66, 115, 29, 0.2), 20px 20px rgba(66, 115, 29, 0.1), 25px 25px rgba(82, 119, 192, 0.05);
+}
+
+.tile-link:hover .tile-img5 {
+    box-shadow: 5px 5px rgba(57, 117, 149, 0.4), 10px 10px rgba(57, 117, 149, 0.3), 15px 15px rgba(57, 117, 149, 0.2), 20px 20px rgba(57, 117, 149, 0.1), 25px 25px rgba(138, 218, 245, 0.05);
+}
+
+.tile-link:hover .tile-img6 {
+    box-shadow: 5px 5px rgba(253, 39, 39, 0.4), 10px 10px rgba(253, 39, 39, 0.3), 15px 15px rgba(253, 39, 39, 0.2), 20px 20px rgba(253, 39, 39, 0.1), 25px 25px rgba(203, 215, 193, 0.05);
+}
+
+.tile-link:hover .tile-img7 {
+    box-shadow: 5px 5px rgba(224, 67, 0, 0.4), 10px 10px rgba(224, 67, 0, 0.3), 15px 15px rgba(224, 67, 0, 0.2), 20px 20px rgba(224, 67, 0, 0.1), 25px 25px rgba(91, 209, 250, 0.05);
+}
+
+.tile-link:hover .tile-img8 {
+    box-shadow: 5px 5px rgba(239, 229, 186, 0.4), 10px 10px rgba(239, 229, 186, 0.3), 15px 15px rgba(239, 229, 186, 0.2), 20px 20px rgba(239, 229, 186, 0.1), 25px 25px rgba(145, 156, 196, 0.05);
+}
+
+.tile-link:hover .tile-img9 {
+    box-shadow: 5px 5px rgba(138, 218, 255, 0.4), 10px 10px rgba(138, 218, 255, 0.3), 15px 15px rgba(138, 218, 255, 0.2), 20px 20px rgba(138, 218, 255, 0.1), 25px 25px rgba(138, 218, 25, 0.05);
+}
+
+.tile-link:hover .tile-img10 {
+    box-shadow: 5px 5px rgba(174, 166, 166, 0.4), 10px 10px rgba(174, 166, 166, 0.3), 15px 15px rgba(174, 166, 166, 0.2), 20px 20px rgba(174, 166, 166, 0.1), 25px 25px rgba(4, 140, 231, 0.05);
+}
